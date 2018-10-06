@@ -7,7 +7,7 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.listen(process.env.PORT, function() {
+app.listen(3000, function() {
   console.log("server is listening");
 });
 // process.env.PORT
