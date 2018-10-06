@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WallStreet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #myDIV {
+            text-align: center;
+            margin: auto;
+            width: 50%;
+            padding: 50px 0;
+            text-align: center;
+            background: #17a2b8;
+            margin-top: 20px;
+            display: none;
+            opacity: 0.6;
+            border-radius: 20px;
+            border: 1px solid white;
+        }
+
+
+
+        .fa {
+            padding: 5px;
+            font-size: 30px;
+            width: 40px;
+            height: 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set a specific color for each brand */
+    </style>
+</head>
+
+<body>
+    <section class="landing">
+        <div class="landing-inner">
+            <a href="https://www.facebook.com/wallstreetmediahouse/" class="fa fa-facebook fb"></a>
+            <a href="https://www.instagram.com/wallstreetmediahouse/?hl=en" class="fa fa-instagram insta"></a>
+            <img src="img\log.png" class="logo" width="350px" height="180px" />
+            <h1>Coming Soon</h1>
+
+            <div class="countdown"></div>
+            <a href="#" class="myButton" onclick="myFunction()">Contact Us</a>
+
+            <div id="myDIV" style="width:300px">
+
+                <a href="tel:9535538389"><img class="abcd" src="img/call.png" width="40px" style="margin-top:10px" />
+                    <!-- <p style="font-size:40px;display:inline;margin-left: 10px">7411087740</p> -->
+                </a>
+                <a href="mailto:contact@wallstreetmediahouse.com?Subject=Query%20WallStreetMediaHouse" target="_top">
+                    <img src="img/mail.png" class="abcd" width="48px" style="margin-left:100px" />
+                    <!-- <p style="font-size:40px;display:inline;margin-left: 10px">7411087740</p> -->
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
